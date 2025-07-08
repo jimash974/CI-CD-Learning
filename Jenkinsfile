@@ -35,7 +35,7 @@ pipeline {
           mvn clean verify sonar:sonar \
             -Dsonar.projectKey=CICD-Learning \
             -Dsonar.projectName='CICD Learning' \
-            -Dsonar.host.url=http://sonarqube:9001 \
+            -Dsonar.host.url=http://sonarqube:9000 \
             -Dsonar.token=sqp_448a81b21a982479d58bedcd8007cb7f17b0ead6
         """
       }
