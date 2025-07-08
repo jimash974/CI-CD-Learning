@@ -14,8 +14,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        checkout scm
-        // git url: 'https://github.com/jimash974/CI-CD-Learning', branch: 'main'
+        git url: 'https://github.com/jimash974/CI-CD-Learning', branch: 'main'
       }
     }
 
