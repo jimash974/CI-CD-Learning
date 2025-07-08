@@ -41,10 +41,7 @@ pipeline {
       }
     }
 
-    stage('Build and Push Docker Imagee') {
-      when {
-        expression { return env.DOCKERHUB_USER && env.DOCKERHUB_TOKEN }
-      }
+    stage('Build and Push Docker Image') {
       steps {
         script {
           docker.withRegistry('https://index.docker.io/v1/', 'dockerhub-creds') {
