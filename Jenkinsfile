@@ -41,7 +41,7 @@ pipeline {
       }
     }
 
-    stage('Build and Push Docker Image') {
+    stage('Build and Push Docker Imagee') {
       when {
         expression { return env.DOCKERHUB_USER && env.DOCKERHUB_TOKEN }
       }
